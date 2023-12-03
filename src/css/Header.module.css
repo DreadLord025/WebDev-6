@@ -1,0 +1,36 @@
+.AppLogo {
+  height: 15vmin;
+  pointer-events: none;
+  margin: 20px 0 0 15px;
+}
+.logoPosition {
+  display: flex;
+  align-items: start;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px 20px 0 0;
+}
+.AppHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .AppLogo {
+    animation: AppLogo-spin infinite 20s linear;
+  }
+}
+
+@keyframes AppLogo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

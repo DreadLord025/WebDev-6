@@ -1,0 +1,38 @@
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translatex(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+.buttonDebug {
+  margin-right: -12px;
+}
+.buttonDebug:hover {
+  color: white;
+  box-shadow: 0 0 20px #0d6efd;
+  background-color: rgba(0, 0, 0, 0);
+}
+.alertwindow {
+  background-color: rgba(0, 0, 0, 0);
+  color: deeppink;
+  box-shadow: 0 0 20px rgba(85, 224, 147, 1);
+  border-color: rgba(85, 224, 147, 1);
+}
+.transmitButton {
+  color: deeppink;
+  font-weight: bold;
+}
+.transmitButton:hover {
+  color: white;
+}
